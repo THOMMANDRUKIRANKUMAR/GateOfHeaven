@@ -1,0 +1,46 @@
+
+<!-- ✅ Navbar -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm py-3 mb-5">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="./index.jsp">Gate Of Heaven</a>
+
+            <!-- Toggler (custom hamburger → cross) -->
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+
+            <!-- Nav Links & Search -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Centered nav links -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.jsp"><i class="bi bi-house-check"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Songs"><i class="bi bi-file-earmark-music"></i> Songs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="post.jsp"><i class="bi bi-pencil"></i> Post Song</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-book"></i> Bible
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="BibleView#OT"><i class="bi bi-book-half"></i> Old Testament BSI</a></li>
+                            <li><a class="dropdown-item" href="BibleView#NT"><i class="bi bi-book-half"></i> New Testament BSI</a></li>
+                            <li><a class="dropdown-item" href=""><i class="bi bi-alphabet-uppercase"></i> English KJV</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Search bar -->
+                <form class="d-flex flex-column flex-sm-row mt-2 mt-lg-0" role="search" action="Search" method="get">
+                    <input class="form-control rounded-2 me-2 shadow-sm" type="search" name="q" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary rounded-2 mt-3 mt-sm-0 px-3" type="submit">Go</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+</header>
